@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans:wght@300;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open-Sans', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+  }
+
+i {
+	margin-right: 10px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.parallax-bg {
+	z-index: -1;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	position: fixed;
+	opacity: 0.1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('/images/background.jpg');
+	-webkit-mask-image: linear-gradient(to bottom, transparent 45%, black 75%);
+	mask-image: linear-gradient(to bottom, transparent 45%, black 75%);
+}
+
+.blackout-img {
+	display: none;
+	opacity: 0.8;
+	background-color: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+}
+
+.close-button {
+	cursor: pointer;
+	height: 10vw;
+}
+
+.custom-btn {
+	width: 180px;
+	height: 45px;
+	padding: 10px 25px;
+	border: 2px solid #000;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+.custom-btn span{
+font-size: .8rem;
+}
+
+button {
+	margin: 20px;
+	outline: none;
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.new-button {
+	background: #300d28;
+	color: #fff;
+	line-height: 42px;
+	padding: 0;
+	border: none;
+}
+.new-button:hover {
+	background: transparent;
+	color: #300d28;
+	box-shadow: -2px -2px 20px 0px #fff9, -1px -1px 5px 0px #fff9,
+		2px 2px 20px 0px #300d28, 1px 1px 5px 0px #300d28;
+}
+.new-button:before,
+.new-button:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #300d28;
+	transition: 400ms ease all;
+}
+.new-button:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+.new-button:hover:before,
+.new-button:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
+}
+
+::-webkit-scrollbar {
+	width: 20px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #300d28;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #d6dee1;
+	border-radius: 20px;
+	border: 6px solid transparent;
+	background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #a8bbbf;
+}
+
+@media(max-width:500px){
+	.custom-btn {
+		width: 200px;
+		height: 70px;
+	}	
+}
+
+.carousel-control-next{
+	z-index: 50 !important;
+
+}
+.carousel-control-prev{
+	z-index: 50 !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	width: 4vw !important;
+	height: 4vw !important;
+}
+#carouselButtons {
+	z-index: 51;
+    position: absolute;
+    bottom: 0px;
+	width: 100%;
+	display: flex;
+	justify-content:center;
+    align-items:center;
+	margin-bottom: 2vw;
+}
+
+#playButton{
+	font-size: 1.5vw;
+	background-color: rgba(0,0,0,0) !important;
+	color: rgba(255,255,255, 0.5);
+	
+}
+#pauseButton{
+	font-size: 1.5vw;
+	background-color: rgba(0,0,0,0) !important;
+	color: rgba(255,255,255, 0.5);
+}
+.btn{
+	padding: 1vw !important;
+}
+.btn:focus{
+	box-shadow: none !important;
+}
+
+.anchor {
+    display:block;
+    padding-top:8vw;
+    margin-top:-8vw;
+ }

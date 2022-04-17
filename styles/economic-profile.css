@@ -1,0 +1,56 @@
+.economic-profile{
+    background-image: url(../images/background-images/bg-economic-profile.webp);
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+}
+.economic-profile-bg-wrapper{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.economic-profile-text{
+    position: absolute;
+    top:4vw;
+    left: 25vw;
+}
+.economic-profile-text h1{
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    color: #300d28;
+}
+.economic-profile-text h2{
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+.economic-profile-img-wrapper{
+    flex: 1.3;
+    margin-left: 7vw;
+    margin-right: 4vw;
+    padding: 3vw 0 0 0 ;
+}
+.economic-profile-img-wrapper img{
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+}
+.economic-profile-info-wrapper{
+    flex: 3;
+    width: 1rem;
+    position: relative;
+    z-index: 900;
+    opacity: 1;
+    margin: 8vw 0 0 0;
+    padding-top: 2vw;
+}
+.economic-profile-info-wrapper object{
+    width: 100%;
+    position: relative;
+    z-index: 900;
+    opacity: 1;
+}

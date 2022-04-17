@@ -1,0 +1,208 @@
+#carouselExampleControls{
+    position: relative;
+    z-index: 10;
+}
+
+.gallery-section {
+	z-index: 10;
+    width: 80vw;
+	position: relative;
+    height: 100%;
+    display: grid;
+    margin-top: 5.2vw;
+    margin-bottom: 2vw;
+}
+
+.gallery-section-columns {
+	/* grid-template-columns: repeat(4, 1fr); */
+    margin:auto;
+    margin-top: 5.2vw;
+    grid-template-columns: repeat(auto-fit, minmax(22vw, 1fr));
+    place-items: center;
+    margin-bottom: 4vw;
+    column-gap: 5vw;
+}
+
+.card {
+    height: 16vw;
+    width: 25vw;
+    margin: 0.4vw 0 1.2vw 0;
+	padding: 1vw;
+	border-radius: 4px;
+	background-color: #fff;
+	transition: transform 300ms ease-in;
+	box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+		0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+		0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.card:focus {
+	outline: 2px solid #1d4ed8;
+}
+
+.card-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.card-wrapper img {
+	display: block;
+	width: 100%;
+	aspect-ratio: 1 / 1;
+    object-position: center;
+    object-fit: cover;
+	border-radius: 3px;
+	transition: transform 250ms linear;
+    transform: translateY(-45px);
+    
+}
+.card-wrapper button{
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.card-wrapper:hover img {
+	transform: scale(1.1) translateY(-45px) translateX(0px);
+}
+
+.hidden-cover {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scaleY(0);
+	transition: transform 150ms ease-in;
+	background: linear-gradient(transparent 5%, rgb(48, 13, 40, 0.6));
+	transform-origin: top;
+	will-change: transform;
+    cursor: pointer;
+}
+
+.card-wrapper:hover .hidden-cover {
+	transform: scaleY(1);
+}
+.card-wrapper:hover h4 {
+	transform: translateY(-2rem);
+}
+
+.photo-wrapper{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    position: relative;
+    z-index: 209;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.photo-frame{
+    position: relative;
+    z-index: 210;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+	padding: 0.9rem;
+	border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 8px hsl(0deg 0% 0% / 0.5);
+    display: grid;
+}
+
+.photo{
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.close-button-icon{
+    justify-self: flex-end;
+    top: -25px;
+    right: -35px;
+    text-shadow: 2px 2px 5px black;
+    color: #fff;
+    font-size: 2.8em;
+    position: absolute;
+    z-index: 211;
+}
+.left-arrow-button{
+    grid-column: 1;
+    align-self: center;
+    left: 20px;
+    transition: opacity 250ms;  
+    opacity: 0.3;
+    text-shadow: 0px 0px 0px black;
+    color: #300d28;
+    font-size: 2.8em;
+    position: absolute;
+    z-index: 211;
+    cursor: pointer;
+}
+.left-arrow-button:hover{
+    transition: opacity 250ms;  
+    opacity: 0.8;
+}
+
+.right-arrow-button{
+    grid-column: 2;
+    align-self: center;
+    right: 20px;
+    transition: opacity 250ms;  
+    opacity: 0.3;
+    text-shadow: 0px 0px 0px black;
+    color: #300d28;
+    font-size: 2.8em;
+    position: absolute;
+    z-index: 211;
+    cursor: pointer;
+}
+.right-arrow-button:hover{
+    transition: opacity 250ms;  
+    opacity: 0.8;
+}
+
+.carousel-control-next-icon{
+    margin-left: 7vw;
+    filter: brightness(0) saturate(100%) invert(7%) sepia(28%) saturate(4078%) hue-rotate(285deg) brightness(92%) contrast(98%);
+}
+.carousel-control-prev-icon{
+    margin-right: 7vw;
+    filter: brightness(0) saturate(100%) invert(7%) sepia(28%) saturate(4078%) hue-rotate(285deg) brightness(92%) contrast(98%);
+}
+
+#carouselExampleFade{
+    margin-top: 8vw !important;
+    height: 90vh !important;
+}
+
+@media screen and (max-width: 768px) {
+    #carouselExampleFade{
+        margin-top: 9vw !important;
+        height: 50vh !important;
+    }
+}
+
+#carousel-slide-inner{
+    height: 100% !important;
+}
+.carousel-slide-item{
+    height: 100% !important;
+}
+
+.slide-image{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.hidden-block {
+    visibility: hidden !important;
+}   

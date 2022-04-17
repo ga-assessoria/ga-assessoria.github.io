@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans:wght@300;700;800&display=swap');
+
+.footer {
+	background-color: #300d28;
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	color: white;
+	display: flex;
+	padding: 3vw 0 2vw 0;
+}
+
+.footer-left {
+	flex: 1;
+	padding-left: 2rem;
+}
+
+.footer-left h3 {
+	font-size: 1.3vw;
+	font-weight: 300;
+	margin: 0 0 0 0;
+}
+
+.footer-left a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Open-Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.3vw;
+}
+
+.footer-left a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-center {
+	margin: .5rem 0 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 35rem;
+	margin: auto;
+	flex: 1;
+}
+
+.footer-center h3 {
+	font-size: 1.1vw;
+	font-weight: 400;
+	margin: 0;
+	font-family: 'Open-Sans', sans-serif;
+}
+
+.footer-center p {
+	font-size: .9vw;
+	margin: 0;
+}
+
+.footer-center span {
+	font-size: 1.2vw;
+	font-weight: 800;
+}
+
+.footer-logo-wrapper {
+	margin-top: 2vw;
+	width: 8vw;
+}
+
+.footer-logo-wrapper object {
+	pointer-events: none;
+	width: 100%;
+}
+
+.footer-logo-wrapper object:hover {
+	color: white;
+}
+
+.footer-right {
+	flex: 1;
+}
+
+
+.ga-logo-container{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 40%; /* depends on svg ratio, for my zebra height/width = 1.2 so padding-bottom = 50% * 1.2 = 60% */
+	z-index: 1;
+	vertical-align: middle; /* do what you want */
+  }
+  
+  .ga-logo{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; /* only required for <img /> */
+	z-index: -1000;
+  }

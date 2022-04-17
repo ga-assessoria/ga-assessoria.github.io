@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans:wght@300;700;800&display=swap');
+
+.data-sheet-header{
+    width: 100%;
+    height: 25vw;
+    background-color: rgb(157,128,128);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+.data-sheet-img-wrapper{
+    display: flex;
+}
+.data-sheet-img-wrapper img{
+    width: 100%;
+    object-fit: cover;
+}
+.data-sheet-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.data-sheet-content h1{
+    color: white;
+    font-size: 4vw;
+    text-transform: uppercase;
+    font-family: 'Belleza', sans-serif;
+    margin: 0rem 0 1.5rem 0;
+}
+.data-sheet-content h2{
+    color: white;
+    font-weight: 100;
+    font-size: 3vw;
+    font-family: 'Belleza', sans-serif;
+}
+.data-sheet-content span{
+    color: white;
+    font-weight: 600; 
+    font-family:'Open-Sans', sans-serif; 
+    font-size: 3vw;
+    margin: 0 1rem 0 0 ;
+}
+.data-sheet-info{
+    width: 100%;
+    height: auto;
+    background-image:url(../images/background-images/bg-data-sheet.webp);
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+}
+.bg-wrapper{
+    width: 100%;
+    height:100%;
+    background-color: white;
+    position: relative;
+    z-index: 800;
+    opacity: .9;
+    display: flex;
+    justify-content: center;
+}
+.bg-wrapper object{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 3rem 4rem 3rem -5rem;
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans:wght@300;500;700;800&display=swap');
+
+.pre-footer{
+    width: 100%;
+    height:auto;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    padding: 6vw 0 3vw 0 ;
+}
+.pre-footer-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8vw 5vw;
+    background-color:#300d28;
+}
+.pre-footer-header h1{
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: white;
+    margin-top: 0.6rem;
+    font-family: 'Open-Sans', sans-serif;
+}
+.css3-shadow{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+}
+.css3-shadow:after{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+    -webkit-box-shadow:0 0 60px rgba(82, 82, 82, 0.9);
+    bottom:0px;
+    left:10%;
+    right:10%;
+    width:80%;
+    height:50%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+}
+.pre-footer-logo-wrapper{
+    display: flex;
+    width: 100vw;
+    /* justify-content: space-between; */
+    padding: 3vw 3vw 0 3vw;
+    position: relative;
+}
+.pre-footer-logo-wrapper a{
+    width:25vw;
+    height: auto;
+
+}
+.pre-footer-logo-wrapper img{
+    width:70%;
+    height: 100%;
+    object-fit: contain;
+}
+#link-1{
+    width: 28vw;
+}
+#link-2{
+    transform: translateX(-5%);
+}
+#link-3{
+    transform: translateX(21%);
+}
+#link-4{
+    transform: translateX(27%);
+}
+.ga-logo{
+    display: flex;
+    text-transform: uppercase;
+    position: absolute;
+    right: 3.5vw;
+    top: 12vw;
+    width: 9vw;
+}
+.ga-logo h2{
+    font-size: 1vw;
+    font-weight: 400;
+    margin: .2vw .3vw 0 0 ;
+}
+.ga-logo object{
+    filter: invert(1);
+    width: 100%;
+}
+a{
+    text-decoration: none;
+
+}

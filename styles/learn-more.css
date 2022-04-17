@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans:wght@300;700;800&display=swap');
+
+.learn-more {
+	width: 100%;
+	height: auto;
+	background-color: white;
+	opacity: 1;
+	position: relative;
+	z-index: 10;
+	padding-bottom: 0rem;
+}
+
+.learn-more-header {
+	display: flex;
+	margin: auto;
+	width: 80vw;
+	height: auto;
+	margin-left: 5vw;
+}
+
+.img-wrapper {
+	width: 50vw;
+	height: 30vw;
+	flex: 40%;
+}
+.img-wrapper img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+	clip-path: inset(0 0 0 8vw);
+}
+
+.spacer2 {
+	width: 2vw;
+	display: flex;
+	flex-direction: column;
+	margin: 0.7rem 0.5rem 0 -3.5rem;
+}
+
+.line-spacer2 {
+	width: 0.12em;
+	background-color: #d3d3d3;
+	height: 93%;
+}
+
+.circle-spacer2 {
+	height: 7px;
+	width: 7px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: #d3d3d3 solid 0.14em;
+	margin-left: -0.15rem;
+}
+
+.learn-more-content {
+	flex: 60%;
+	max-width: 35vw;
+}
+
+.learn-more-content-logos {
+	display: flex;
+	width: 100%;
+	gap: 4.5vw;
+}
+
+.learn-more-content img:nth-child(1) {
+	height: 6vw;
+}
+.learn-more-content img:nth-child(2) {
+	height: 8vw;
+}
+
+.learn-more-header h1 {
+	font-weight: 800;
+	font-size: 1.9vw;
+	margin-bottom: 1.5vw;
+	color: #300d28;
+}
+.learn-more-header p {
+	font-weight: 500;
+	font-size: 1.4vw;
+	line-height: 1.8vw;
+	text-align: justify;
+	margin-bottom: 3vw;
+}
+
+.learn-more-footer {
+	margin: 5vw 0 0 0;
+	padding: 0 0 5vw 0;
+	position: relative;
+}
+.learn-more-footer h1 {
+	font-size: 1.7vw;
+	text-align: center;
+	letter-spacing: 0.1rem;
+	color:#300d28;
+}
+.learn-more-footer-subtitle {
+	display: flex;
+	justify-content: center;
+	gap: 15rem;
+	width: 100%;
+	margin: 0 0 2rem 0;
+	color:#300d28;
+}
+.learn-more-footer-subtitle h2 {
+	font-size: 1.2vw;
+	letter-spacing: 0.1rem;
+}
+.block-logos {
+	display: flex;
+	justify-content: center;
+	gap: 10rem;
+	margin: 0 0 0 -3rem;
+}
+.logos-grid-1 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 0vw;
+	row-gap: 1vw;
+	position: relative;
+}
+.img-1a {
+	width: 7vw;
+}
+.img-2a {
+	width: 10vw;
+}
+.img-3a {
+	width: 6vw;
+}
+.img-4a {
+	width: 9vw;
+}
+.img-absolute-1 {
+	position: absolute;
+	width: 5vw;
+	top: 3vw;
+	left: 6vw;
+}
+.logos-grid-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 3vw;
+	row-gap: 3vw;
+	position: relative;
+}
+
+.img-1b {
+	width: 7vw;
+}
+.img-2b {
+	width: 6vw;
+}
+.img-3b {
+	width: 6vw;
+}
+.img-4b {
+	width: 9vw;
+	margin: 0 0 0 -1rem;
+}
+.img-absolute-2 {
+	position: absolute;
+	width: 7vw;
+	top: 4.5vw;
+	left: 6vw;
+}
+

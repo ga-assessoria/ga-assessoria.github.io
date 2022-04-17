@@ -1,0 +1,10 @@
+.youtube-video{
+    z-index: 5;
+    position: relative;
+    width:100%;
+    height: 85vh;
+}
+.youtube-video video{
+    width: 100%;
+    height: 100%;
+}
