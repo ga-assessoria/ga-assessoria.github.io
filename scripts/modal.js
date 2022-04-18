@@ -4,7 +4,7 @@ let centralParkMail;
 
 const NEXT = 'next';
 const PREVIOUS = 'prev';
-const GALLERY_FULL_URL = './images/gallery-images-full/';
+const GALLERY_FULL_URL = '/images/gallery-images-full/';
 
 function handleGalleryPictureChange(direction){
     const photoComponent = document.getElementById('selected-photo');

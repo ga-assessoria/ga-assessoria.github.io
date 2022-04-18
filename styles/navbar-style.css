@@ -23,12 +23,7 @@
 	margin: 2vw;
 	width: 13vw;
 }
-@media (max-width: 340px) {
-	.navbar-logo {
-		margin: 2vw;
-		width: 25vw;
-	}
-}
+
 .navbar{
 	z-index:550;
 	align-items: flex-end !important;
@@ -183,5 +178,23 @@
 	.hori-selector .right:before {
 		bottom: -25px;
 		left: -25px;
+	}
+}
+
+@media(max-width:700px){
+	.navbar-toggler{
+		margin: 0 0 0 0 ;
+	}
+	.navbar{
+		height: 25vw;
+		align-items: center !important;
+	}
+	.logo-link{
+		width: 70%;
+		top: 0;
+	}
+	.navbar-logo{
+		width: 50vw;
+		margin-left: 35%;
 	}
 }
