@@ -2,22 +2,20 @@
 	display: none;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: 100%;
-	position: absolute;
+	width: 100vw;
 	z-index: 300;
 	position: fixed;
-	left: 0;
 	top: 0;
+	margin-top: 15vh;
 }
 
 .contact-frame {
 	position: relative;
 	z-index: 310;
+	width: 50vw;
+	padding: 6vh 0 6vh 0;
 	margin: auto;
-    max-width: 400px;
-	height: 80vh;
-	padding: 0.9rem;
+	padding: 1vw;
 	border-radius: 4px;
 	background-color: #fff;
 	box-shadow: 0px 0px 8px 8px hsl(0deg 0% 0% / 0.5);
@@ -26,25 +24,26 @@
 .contact-frame i {
 	text-shadow: 2px 2px 5px black;
 	color: #fff;
-	font-size: 2.8em;
+	font-size: 3.8vw;
 	width: 100%;
-	height: 10vw;
 	display: flex;
-	top: -20px;
-	right: -30px;
+	top: -3vh;
+	right: -3vw;
 	justify-content: flex-end;
 	position: absolute;
 	z-index: 211;
+	cursor: pointer;
 }
 
 .contact-form-wrapper {
-	padding: 60px 0;
+	padding: 2vw 0;
 }
 
 .contact-form {
-	padding: 0px 40px;
+	width: 90%;
+	padding: 0px 2vw;
 	background-color: #ffffff;
-	border-radius: 12px;
+	border-radius: 0.2vw;
 
 }
 
@@ -55,14 +54,18 @@
 .contact-form .form-input,
 .form-text-area {
 	background-color: #f0f4f5;
-	height: 50px;
-	padding-left: 16px;
+	height: 3vw;
+	padding-left: 0.4vw;
 }
 
 .contact-form .form-text-area {
 	background-color: #f0f4f5;
 	height: auto;
-	padding-left: 16px;
+	padding-left: 0.4vw;
+}
+
+.form-control{
+	font-size: 1vw !important;
 }
 
 .contact-form .form-control::placeholder {
@@ -88,12 +91,87 @@
 
 .contact-form .title {
 	text-align: center;
-	font-size: 24px;
+	font-size: 2vw;
 	font-weight: 500;
 }
 
 .contact-form .description {
 	color: #aeb4b9;
-	font-size: 14px;
+	font-size: 1.5vw;
 	text-align: center;
+}
+
+@media(min-width:701px) and (max-width:1279px){
+	.contact-frame i {
+		text-shadow: 2px 2px 5px black;
+		color: #fff;
+		font-size: 3.8vw;
+		width: 100%;
+		display: flex;
+		top: -2vh;
+		right: -4vw;
+		justify-content: flex-end;
+		position: absolute;
+		z-index: 211;
+		cursor: pointer;
+	}
+}
+@media(max-width:700px){
+	.contact-wrapper {
+		margin-top: 15vh;
+	}
+	.contact-frame i {
+		text-shadow: 2px 2px 5px black;
+		color: #fff;
+		font-size: 8.8vw;
+		width: 100%;
+		height: 10vw;
+		display: flex;
+		top: -3vh;
+		right: -9vw;
+		justify-content: flex-end;
+		position: absolute;
+		z-index: 211;
+		cursor: pointer;
+	}
+	
+	.contact-frame {	
+		position: relative;
+		z-index: 310;
+		width: 80vw;
+		margin: auto;
+		padding: 6vh 0 6vh 0;
+		border-radius: 4px;
+		background-color: #fff;
+		box-shadow: 0px 0px 8px 8px hsl(0deg 0% 0% / 0.5);
+	}
+
+	.contact-form .form-input,
+	.form-text-area {
+		background-color: #f0f4f5;
+		height: 8vw;
+		padding-left: 0.4vw;
+	}
+	
+	.contact-form .form-text-area {
+		background-color: #f0f4f5;
+		height: auto;
+		padding-left: 0.4vw;
+	}
+	.form-control{
+		font-size: 2.5vw !important;
+	}
+
+	.contact-form .title {
+		text-align: center;
+		font-size: 4.5vw;
+		font-weight: 500;
+	}
+	
+	.contact-form .description {
+		color: #aeb4b9;
+		font-size: 3.5vw;
+		text-align: center;
+	}
+	
 }

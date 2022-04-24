@@ -53,7 +53,6 @@ function handleGalleryModalClose (){
 }
 
 function handleContactModalClick (isCentralPark){
-    console.log('Chegou no parametro: ', isCentralPark);
     centralParkMail = isCentralPark;
     const blackout =  document.querySelector('.blackout-img');
     blackout.style.display = 'block';

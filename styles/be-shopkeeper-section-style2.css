@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans:wght@300;700;800&display=swap');
-
 .be-shopkeeper2 {
 	height: auto;
 	width: 100%;
-    position: relative;
+	position: relative;
 	background-color: white;
-    z-index: 3;
+	z-index: 3;
 	padding-top: 2rem;
 }
+
 .be-shopkeeper-wrapper2 {
 	width: 100%;
 	height: 100%;
@@ -17,31 +16,41 @@
 	justify-content: center;
 }
 
-.flex-btn{
+.flex-btn {
 	display: flex;
 	width: 70%;
 	align-items: center;
 	justify-content: center;
 }
-.flex-btn1{
+
+.flex-btn1 {
 	flex: 1;
 	display: flex;
 	margin: auto;
-	flex-direction:column;
+	flex-direction: column;
 	align-items: center;
 }
-.flex-btn2{
+
+.flex-btn2 {
 	flex: 1;
 	display: flex;
 	margin: auto;
-	flex-direction:column;
+	flex-direction: column;
 	align-items: center;
 }
-.flex-btn img{
+
+.flex-btn img {
 	margin-bottom: 1rem;
 	width: 20vw !important;
 }
 
+.flex-btn1 img{
+	padding-top: 1vw;
+}
+
+.flex-btn1 button{
+	margin-top: 1vw;
+}
 .be-shopkeeper-wrapper2 h1 {
 	font-family: 'Open Sans', sans-serif !important;
 	font-size: 2.5vw;
@@ -49,6 +58,7 @@
 	color: #300d28;
 	margin-bottom: 3vh;
 }
+
 .be-shopkeeper-wrapper2 h2 {
 	font-family: 'Open Sans', sans-serif !important;
 	font-size: 1.5vw;
@@ -57,11 +67,49 @@
 	color: #300d28;
 	margin-bottom: 3vh;
 }
+
 .frame {
 	width: 90%;
 	margin: 40px auto;
 	text-align: center;
 }
 
+@media(max-width:700px) {
+	.flex-btn img {
+		width: 30vw !important;
+	}
+	
+	.be-shopkeeper-wrapper2 h1 {
+		font-family: 'Open Sans', sans-serif !important;
+		font-size: 3.5vw;
+		font-weight: 800;
+		color: #300d28;
+		margin-top: 2vh;
+		margin-bottom: 1vh;
+	}
 
+	.be-shopkeeper-wrapper2 h2 {
+		font-family: 'Open Sans', sans-serif !important;
+		font-size: 2vw;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #300d28;
+		margin-bottom: 1vh;
+	}
 
+	.flex-btn {
+		margin-bottom: 7vw;
+	}
+}
+@media(max-width:500px) {
+	.be-shopkeeper {
+		margin-top: 13vw;
+		margin-bottom: 10vw;
+	}
+	.be-shopkeeper-wrapper2 h1 {
+		font-size: 4.5vw;
+	}
+	.be-shopkeeper-wrapper2 h2 {
+		font-size: 3vw;
+	}
+}

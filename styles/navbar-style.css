@@ -12,6 +12,10 @@
 	cursor: pointer;
 }
 
+.nav-item{
+	background-color: #300d28;
+}
+
 .nav-link{
 	font-size: 1.1em !important;
 }

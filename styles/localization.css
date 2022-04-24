@@ -1,18 +1,25 @@
-.localization{
+.localization {
     width: auto;
     height: auto;
     background-color: white;
 }
+
 .localization-header {
     display: flex;
+    /* flex-direction: column; */
     position: relative;
     z-index: 20;
     width: 100%;
     height: auto;
-    padding: 7vw 0 0 3vw;
+    padding: 3vw 0 0 3vw;
 }
 
-.localization-header h1 {
+.localization-title{
+    padding-left: 8vw;
+    display: flex;
+}
+.localization-title h1 {
+    margin-left: 1vw;
     text-transform: uppercase;
     font-size: 2.5vw;
     color: #300d28;
@@ -25,7 +32,10 @@
 }
 
 .localization-subtitle-wrapper {
-    width: auto;
+    margin-top: 7vw;
+    width: 60vw;
+    position: absolute;
+    z-index: 10;
 }
 
 .localization-header h2 {
@@ -34,110 +44,243 @@
     font-weight: 300;
     text-align: right;
     margin-bottom: .5vw;
+    border: 2px solid white;
 }
 
 .localization-subtitle-wrapper h2:nth-child(1) {
     color: rgb(255, 255, 255);
     background-color: #74645C;
-    margin-left: 57vw;
-    opacity: 90%;
+    margin-left: 35vw;
+    opacity: 100%;
 }
 
 .localization-subtitle-wrapper h2:nth-child(2) {
     color: rgb(255, 255, 255);
     background-color: #300D28;
-    margin-left: 44vw;
-    opacity: 90%;
+    margin-left: 27vw;
+    opacity: 100%;
 }
 
 .localization-subtitle-wrapper h2:nth-child(3) {
     color: rgb(255, 255, 255);
-    background-color: #8CA38B;
-    margin-left: 36vw;
-    opacity: 90%;
+    background-color: #74645C;
+    margin-left: 23vw;
+    opacity: 100%;
 }
 
 .localization-subtitle-wrapper h2:nth-child(4) {
     color: rgb(255, 255, 255);
-    background-color: #EDB552;
-    margin-left: 26vw;
-    opacity: 90%;
+    background-color: #8CA38B;
+    margin-left: 19vw;
+    opacity: 100%;
 }
 
 .localization-subtitle-wrapper h2:nth-child(5) {
     color: rgb(255, 255, 255);
-    background-color: #74645C;
-    margin-left: 23vw;
-    opacity: 90%;
+    background-color: #EDB552;
+    margin-left: 12vw;
+    opacity: 100%;
 }
 
 .localization-subtitle-wrapper h2:nth-child(6) {
     color: rgb(255, 255, 255);
-    background-color: #8CA38B;
-    margin-left: 23vw;
-    opacity: 57%;
+    background-color: #74645C;
+    margin-left: 9vw;
+    opacity: 100%;
 }
 
-
+.localization-subtitle-wrapper h2:nth-child(7) {
+    color: rgb(255, 255, 255);
+    background-color: #8CA38B;
+    margin-left: 6vw;
+    opacity: 100%;
+}
 
 .localization-map {
-    width: 55vw;
+    width: 45vw;
     display: flex;
-    margin: auto;
+    margin-left: 2vw;
     height: auto;
     position: relative;
     z-index: 10;
-    padding: 5vw 0 5vw 0;
+    padding: 2vw 0 5vw 0;
 }
-
-
 
 .localization-map img {
     width: 100%;
 }
 
 .first-localization-animation {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-	animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
+
 .second-localization-animation {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s both;
-	animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s both;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s both;
+    animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s both;
 }
+
 .third-localization-animation {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s both;
-	animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s both;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s both;
+    animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s both;
 }
+
 .fourth-localization-animation {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s both;
-	animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s both;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s both;
+    animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.3s both;
 }
+
 .fifth-localization-animation {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s both;
-	animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s both;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s both;
+    animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s both;
 }
+
 .sixth-localization-animation {
-	-webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s both;
-	animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s both;
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s both;
+    animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s both;
+}
+
+.seventh-localization-animation {
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s both;
+    animation: slide-left 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s both;
+}
+
+
+.waze-icon {
+    max-width: 3vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 3px 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 3px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 3px 1px;
+    -o-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 3px 1px;
+    border-radius:6px;
+}
+.waze-icon:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 1px 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 1px 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 1px 1px;
+    -o-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 1px 1px;
 }
 
 @-webkit-keyframes slide-left {
-	0% {
-		-webkit-transform: translateX(2300px);
-		transform: translateX(2300px);
-	}
-	100% {
-		-webkit-transform: translateX(0);
-		transform: translateX(0);
-	}
+    0% {
+        -webkit-transform: translateX(2300px);
+        transform: translateX(2300px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
+
 @keyframes slide-left {
-	0% {
-		-webkit-transform: translateX(2300px);
-		transform: translateX(2300px);
-	}
-	100% {
-		-webkit-transform: translateX(0);
-		transform: translateX(0);
-	}
+    0% {
+        -webkit-transform: translateX(2300px);
+        transform: translateX(2300px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@media(max-width:700px) {
+    .localization {
+        height: 100vw;
+    }
+
+    .localization-map {
+        position: absolute;
+        top: 45vw;
+        width: 90%;
+        margin: 0 3vw;
+    }
+    
+    .localization-title{
+        margin-left: -5vw;
+        display: flex;
+        z-index: 20;
+        position: absolute;
+    }
+
+    .localization-title h1 {
+        padding-top: 0.5vh;
+        font-size: 3.5vw;
+        font-weight: 600;
+        margin-left: 2vw;
+    }
+    .waze-icon {
+        max-width: 6vw;
+    }
+
+    .localization-subtitle {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .localization-subtitle-wrapper {
+        margin-top: 7vw;
+        width: 100vw;
+        position: absolute;
+        z-index: 10;
+        top: -4vw;
+    }
+    .localization-header h2 {
+        font-size: 2vw;
+        padding: .8vw .7vw;
+        font-weight: 300;
+        text-align: right;
+        margin-bottom: .5vw;
+        border: 2px solid white;
+    }
+    .localization-subtitle-wrapper h2:nth-child(1) {
+        color: rgb(255, 255, 255);
+        background-color: #74645C;
+        margin-left: 64vw;
+        opacity: 100%;
+    }
+    
+    .localization-subtitle-wrapper h2:nth-child(2) {
+        color: rgb(255, 255, 255);
+        background-color: #300D28;
+        margin-left: 47vw;
+        opacity: 100%;
+    }
+    
+    .localization-subtitle-wrapper h2:nth-child(3) {
+        color: rgb(255, 255, 255);
+        background-color: #74645C;
+        margin-left: 44vw;
+        opacity: 100%;
+    }
+    
+    .localization-subtitle-wrapper h2:nth-child(4) {
+        color: rgb(255, 255, 255);
+        background-color: #8CA38B;
+        margin-left: 38vw;
+        opacity: 100%;
+    }
+    
+    .localization-subtitle-wrapper h2:nth-child(5) {
+        color: rgb(255, 255, 255);
+        background-color: #EDB552;
+        margin-left: 21vw;
+        opacity: 100%;
+    }
+    
+    .localization-subtitle-wrapper h2:nth-child(6) {
+        color: rgb(255, 255, 255);
+        background-color: #74645C;
+        margin-left: 17vw;
+        opacity: 100%;
+    }
+    
+    .localization-subtitle-wrapper h2:nth-child(7) {
+        color: rgb(255, 255, 255);
+        background-color: #8CA38B;
+        margin-left: 16vw;
+        opacity: 100%;
+    }
 }

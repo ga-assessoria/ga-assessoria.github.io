@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Open+Sans:wght@300;700;800&display=swap');
-
 .data-sheet-header{
     width: 100%;
-    height: 25vw;
+    height: 100%;
     background-color: rgb(157,128,128);
     position: relative;
     z-index: 10;
@@ -10,10 +8,14 @@
     justify-content: center;
 }
 .data-sheet-img-wrapper{
+    max-width: 60%;
     display: flex;
+    margin-right: 4vw;
+    margin-left: -4vw;
 }
 .data-sheet-img-wrapper img{
     width: 100%;
+    max-height: 100%;
     object-fit: cover;
 }
 .data-sheet-content{
@@ -48,8 +50,10 @@
     position: relative;
     z-index: 10;
     opacity: 1;
+    display: flex;
+    margin: auto;
 }
-.bg-wrapper{
+.data-sheet-info-bg-wrapper{
     width: 100%;
     height:100%;
     background-color: white;
@@ -59,9 +63,76 @@
     display: flex;
     justify-content: center;
 }
-.bg-wrapper object{
-    width: 100%;
-    height: 100%;
+/* .data-sheet-info-bg-wrapper object{
+    width: 72vw;
     object-fit: cover;
     margin: 4vw 0 3vw 0;
+} */
+
+
+.data-sheet-info-bg-wrapper img{
+    width: 72vw;
+    object-fit: cover;
+    margin: 4vw 0 3vw -14vw;
+    content: url("../images/info-graphics/data-sheet-icons.svg");
+}
+
+@media(max-width:700px){
+    .data-sheet-content{
+        justify-content: center;
+        margin-left: -3vw;
+    }
+    .data-sheet-content h1{
+        font-size: 3vw;
+        margin: 0 0 3vw 0;
+    }
+    .data-sheet-content h2{
+        font-weight: 100;
+        font-size: 5vw;
+        margin: 0 0 1vw 0;
+    }
+    .data-sheet-content span{
+        font-weight: 600; 
+        font-size: 4vw;
+        margin: 0 1rem 0 0 ;
+    }
+    .data-sheet-info-bg-wrapper{
+        width: 100%;
+        height:auto;
+        background-color: white;
+        position: relative;
+        z-index: 800;
+        opacity: .9;
+        display: flex;
+        justify-content: center;
+    }
+    .data-sheet-info-bg-wrapper img{
+        width: 96vw;
+        object-fit: cover;
+        margin: 4vw 0 3vw 2vw;
+        content: url("../images/info-graphics/data-sheet-icons-mobile.svg");
+    }
+    .data-sheet-img-wrapper{
+        max-width: 60vw;
+        display: flex;
+        margin-right: 4vw;
+        margin-left: -4vw;
+    }
+    .data-sheet-header{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .data-sheet-img-wrapper img{
+        object-fit: cover;
+    }
+    .data-sheet-content h1{
+        font-size: 4vw;
+        margin: 0 0 3vw 0;
+    }
+    .data-sheet-content h2{
+        font-weight: 100;
+        font-size: 5vw;
+        margin: 0 0 0 0;
+    }
 }
