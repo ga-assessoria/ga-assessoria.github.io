@@ -192,7 +192,7 @@
 
     .localization-map {
         position: absolute;
-        top: 45vw;
+        top: 50vw;
         width: 90%;
         margin: 0 3vw;
     }
@@ -225,7 +225,7 @@
         width: 100vw;
         position: absolute;
         z-index: 10;
-        top: -4vw;
+        top: -2vw;
     }
     .localization-header h2 {
         font-size: 2vw;
@@ -238,49 +238,56 @@
     .localization-subtitle-wrapper h2:nth-child(1) {
         color: rgb(255, 255, 255);
         background-color: #74645C;
-        margin-left: 64vw;
+        margin-left: 46vw;
         opacity: 100%;
+        font-size: 2.4vw;
     }
     
     .localization-subtitle-wrapper h2:nth-child(2) {
         color: rgb(255, 255, 255);
         background-color: #300D28;
-        margin-left: 47vw;
+        margin-left: 32vw;
         opacity: 100%;
+        font-size: 2.4vw;
     }
     
     .localization-subtitle-wrapper h2:nth-child(3) {
         color: rgb(255, 255, 255);
         background-color: #74645C;
-        margin-left: 44vw;
+        margin-left: 24vw;
         opacity: 100%;
+        font-size: 2.4vw;
     }
     
     .localization-subtitle-wrapper h2:nth-child(4) {
         color: rgb(255, 255, 255);
         background-color: #8CA38B;
-        margin-left: 38vw;
+        margin-left: 15vw;
         opacity: 100%;
+        font-size: 2.4vw;
     }
     
     .localization-subtitle-wrapper h2:nth-child(5) {
         color: rgb(255, 255, 255);
         background-color: #EDB552;
-        margin-left: 21vw;
+        margin-left: 5vw;
         opacity: 100%;
+        font-size: 2.4vw;
     }
     
     .localization-subtitle-wrapper h2:nth-child(6) {
         color: rgb(255, 255, 255);
         background-color: #74645C;
-        margin-left: 17vw;
+        margin-left: 1vw;
         opacity: 100%;
+        font-size: 2.4vw;
     }
     
     .localization-subtitle-wrapper h2:nth-child(7) {
         color: rgb(255, 255, 255);
         background-color: #8CA38B;
-        margin-left: 16vw;
+        margin-left: 0vw;
         opacity: 100%;
+        font-size: 2.4vw;
     }
 }

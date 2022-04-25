@@ -106,28 +106,29 @@
 		z-index: 3;
 		width: 100%;
 		color: white;
-		padding: 2vw 0 1.5vw 0;
+		padding: 4vw 0 1.5vw 0;
 	}
 	.footer-mobile h3{
-		font-size: 2vw;
-		margin-bottom: 2vw;
+		font-size: 3vw;
+		margin-bottom: 3vw;
 	}
 	.footer-mobile h4{
-		font-size: 1.7vw;
+		font-size: 2.5vw;
 		margin: 0;
 	}
 	.footer-mkt{
-		font-size: 1.7vw;
+		font-size: 3vw;
 		margin: 0;
-		margin-bottom: 5vw;
+		margin-bottom: 3vw;
 	}
 	.footer-center p{
-		font-size: 1.5vw;
-		margin-bottom: .5vw;
+		font-size: 2vw;
+		margin-bottom: 4vw;
 	}
 	.ga-logo-footer-mobile{
-		font-size: 1vw;
+		font-size: 1.8vw;
 		color: white;
 		text-decoration: none;
+		margin-bottom: 2vw;
 	}
 }
