@@ -1,4 +1,8 @@
 // ---------Responsive-navbar-active-animation-----------
+let isMobile = false; //initiate as false
+// device detection
+isMobile = (document.body.clientWidth < 800);
+
 function test() {
 	var tabsNewAnim = $("#navbarSupportedContent");
 	var selectorNewAnim = $("#navbarSupportedContent").find("li").length;
@@ -8,7 +12,7 @@ function test() {
 	var itemPosNewAnimTop = activeItemNewAnim.position();
 	var itemPosNewAnimLeft = activeItemNewAnim.position();
 	$(".hori-selector").css({
-		top: itemPosNewAnimTop.top + "px",
+		top: (!isMobile) ? "0px" : itemPosNewAnimTop.top + "px",
 		left: itemPosNewAnimLeft.left + "px",
 		height: activeWidthNewAnimHeight + "px",
 		width: activeWidthNewAnimWidth + "px"
@@ -21,7 +25,7 @@ function test() {
 		var itemPosNewAnimTop = $(this).position();
 		var itemPosNewAnimLeft = $(this).position();
 		$(".hori-selector").css({
-			top: itemPosNewAnimTop.top + "px",
+			top: (!isMobile) ? "0px" : itemPosNewAnimTop.top + "px",
 			left: itemPosNewAnimLeft.left + "px",
 			height: activeWidthNewAnimHeight + "px",
 			width: activeWidthNewAnimWidth + "px"
@@ -45,12 +49,14 @@ $(".navbar-toggler").click(function () {
 	});
 });
 
-$(".nav-link").click(function () {
-	$(".navbar-collapse").slideToggle(300);
-	setTimeout(function () {
-		test();
+if(isMobile){
+	$(".nav-link").click(function () {
+		$(".navbar-collapse").slideToggle(300);
+		setTimeout(function () {
+			test();
+		});
 	});
-});
+}
 
 
 jQuery(document).ready(function ($) {
